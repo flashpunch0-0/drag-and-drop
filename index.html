@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag-n-Drop</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <!-- //container wrapper will be the outer box containig al the contents use of
+      container-wrapper = applying common css for all like font-size,family etc
+      // -->
+      <!--  -->
+
+      <div class="container" id="container1">
+        <!-- //created container class // conainer1 contains items to be dragged -->
+        <!--  -->
+        <div class="item" draggable="true">Item 1</div>
+        <div class="item" draggable="true">Item 2</div>
+        <div class="item" draggable="true">Item 3</div>
+        <div class="item" draggable="true">Item 4</div>
+      </div>
+
+      <!-- //container 2 is where items will be dragged to -->
+      <div class="container droppable" id="container2"></div>
+    </div>
+    <!-- container wrapper finishes -->
+
+    <div class="messagewrapper">
+      <div class="success-message" id="successMessage"></div>
+      <button class="resetbutton" onclick="reset()">Reset</button>
+    </div>
+  </body>
+</html>
